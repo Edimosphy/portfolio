@@ -53,6 +53,14 @@ h1 {
     gap: 2rem;
 }
 
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
 .profile-pic {
     width: 200px;
     height: 200px;
@@ -173,4 +181,17 @@ h1 {
 
 .social-icon:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-buttons {
+        justify-content: center;
+    }
+    .skills-section h3 {
+        text-align: left;
+    }
 }
